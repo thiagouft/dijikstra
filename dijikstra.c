@@ -5,7 +5,7 @@
 #define FLSH gets(l)
 
 /*
-	um dado vertice (no) no grafo, o algoritmo localiza o caminho com a menor custo 
+	Num dado vertice (no) no grafo, o algoritmo localiza o caminho com a menor custo 
 	(isto é, o caminho mais curto) entre esse vertice e todos os outros vertices, 
 	recorrendo ao peso/custo da aresta. Este sistema, pode tambem ser usado para 
 	encontrar custos de caminhos mais curtos a partir de um unico vertice para 
