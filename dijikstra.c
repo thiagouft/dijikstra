@@ -4,6 +4,26 @@
 
 #define FLSH gets(l)
 
+/*
+	um dado vertice (no) no grafo, o algoritmo localiza o caminho com a menor custo 
+	(isto é, o caminho mais curto) entre esse vertice e todos os outros vertices, 
+	recorrendo ao peso/custo da aresta. Este sistema, pode tambem ser usado para 
+	encontrar custos de caminhos mais curtos a partir de um unico vertice para 
+	um vertice de destino parando o algoritmo uma vez que o caminho mais curto para 
+	o vertice destino tiver sido determinado.
+	
+	Seja G(V,A) um grafo orientado e s um vértice de G:
+
+	1 - Atribuir valor zero à estimativa do custo mínimo do vértice s (a raiz da busca) e infinito às restantes estimativas;
+	2 - Atribuir um valor qualquer aos precedentes (o precedente de um vértice t é o vértice que precede t no caminho de custo mínimo de s para t);
+	3 - Enquanto houver vértice aberto:
+		* Seja k um vértice ainda aberto cuja estimativa seja a menor dentre todos os vértices abertos;
+		* Feche o vértice k;
+		* Para todo vértice j ainda aberto que seja sucessor de k faça:
+			* Some a estimativa do vértice k com o custo do arco que une k a j;
+			* Caso esta soma seja melhor que a estimativa anterior para o vértice j, substituir e anotar k como precedente de j.
+*/
+
 int destino, origem, vertices = 0;
 int custo, *custos = NULL;
 
