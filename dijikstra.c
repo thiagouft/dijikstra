@@ -4,6 +4,8 @@
 
 #define FLSH gets(l)
 
+//Muito Bem
+
 /*
 	Num dado vertice (no) no grafo, o algoritmo localiza o caminho com a menor custo 
 	(isto é, o caminho mais curto) entre esse vertice e todos os outros vertices, 
